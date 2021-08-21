@@ -1,0 +1,365 @@
+:root {
+    --font-family:'Poppins', sans-serif;
+    --font-weight: bold;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    background: url(images/1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body::before{
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(5,7,12,0.70),rgba(5,7,12,0.70));
+    z-index: -1;
+}
+
+.encabezado {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.menu{
+    width: 45%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background: #00000021;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.menu ul{
+    margin: 0;
+    justify-content: center;
+    list-style: none;
+    display: flex; 
+}
+
+.menu li:hover{
+    text-decoration: underline;
+}
+
+.menu li a{
+    display: block;
+    padding:20px;
+    color: #fff;
+    font-family: var(--font-family);
+    text-decoration: none;
+}
+
+.logo{
+    width: 10%;
+    margin: 0px;
+    padding: 0;
+    display: flex;
+    background: #00000021;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 200px;
+}
+
+.logo img{
+    width: 60%;
+    margin: 20px;
+    display: flex;
+}
+
+.redes{
+    width: 45%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background: #00000021;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.redes a{
+    width: 10%;
+    padding: 16px;
+    font-family: var(--font-family);
+}
+
+.redes a i:hover{
+    text-decoration: underline;
+}
+
+.redes a i{
+    color: #fff;
+    font-size: 30px;
+}
+
+.bienvenido {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: #00000050;  
+}
+
+.redes1 i{
+    color: #fff;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.bienvenido h1{
+    color: #fff;
+    font-size: 80px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    /* text-shadow: 5px 5px 5px gray; */
+}
+
+.biografia{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.texto{
+    width: 60%;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+}
+
+.texto h1{
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+}
+
+.texto p{
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+    font-family: var(--font-family);
+    font-size: 20px;
+}
+
+.texto li{
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+    font-family: var(--font-family);
+    list-style: none;
+}
+
+.foto{
+    width: 30%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto img{
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.videos{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(5,7,12,0.70),rgba(5,7,12,0.70));  
+}
+
+.descripcion h1{
+    color:#fff;
+    font-size: 60px;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+}
+
+.descripcion p{
+    width: 60%;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+    color:#fff;
+    font-size: 20px;
+}
+
+.musica{
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.v1{
+    width: 30%;
+    height: 400px;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.v2{
+    width: 30%;
+    height: 400px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.v3{
+    width: 30%;
+    height: 400px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.instagram{
+    width: 100%;
+    height: 600px;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+}
+
+.instagram h1{
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    color: #fff;
+    font-size: 60px;
+}
+
+.instagram p{
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+    font-family: var(--font-family);
+    font-size: 20px;
+}
+
+.images{
+    width: 80%;
+    color: #fff;
+}
+
+.info{
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+    background: #00000050;
+}
+
+.phone {
+    width: 20%;
+    font-family: var(--font-family);
+    color: #fff;
+    border: black;
+}
+
+.email{
+    width: 20%;
+    font-family: var(--font-family);
+    color: #fff;
+    border: black;
+}
+
+.manager{
+    width: 20%;
+    font-family: var(--font-family);
+    color: #fff;
+    border: black;
+}
+
+.final{
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+    color: #fff;
+    font-size: 12px;
+    background: black;
+}
+
